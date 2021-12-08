@@ -1,0 +1,80 @@
+<!--
+        Name: Vishal Upendra Chavda
+        Student ID: A00242303
+        Final Exam: Dice Rolling App
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/initialSection" >
+
+    //Reference: https://developer.android.com/guide/topics/ui/layout/linear
+        <LinearLayout
+            android:id="@+id/ltDiceApp"
+            style="@style/LinLayout">
+
+            <!-- Textview for "App Name" -->
+            <TextView
+                android:id="@+id/tvDiceApp"
+                android:text="Dice Rolling APP"
+                style="@style/appName"
+                />
+
+            <!-- Text views to display Results-->
+            <TextView
+                android:id="@+id/tvDiceOneResult"
+                android:text="0"
+                style="@style/diceResult" />
+
+            <TextView
+                android:id="@+id/tvDiceTwoResult"
+                android:text="0"
+                style="@style/diceResult" />
+
+            <!-- Radio button group for sides 4,6,8,10, and 12 -->
+            <RadioGroup
+                android:id="@+id/numDiceGroup"
+                style="@style/radioButtonStyle"
+                android:checkedButton="@id/D_Side_Four"
+                android:orientation="vertical">
+
+                <!-- Radio button group for 4 sided dice -->
+                <RadioButton
+                    android:id="@+id/D_Side_Four"
+                    style="@style/radioButtonStyle"
+                    android:text="4 Sides" />
+
+                <!-- Radio button group for 6 sided dice -->
+                <RadioButton
+                    android:id="@+id/D_Side_Six"
+                    style="@style/radioButtonStyle"
+                    android:text="6 Sides" />
+
+                <!-- Radio button group for 8 sided dice -->
+                <RadioButton
+                    android:id="@+id/D_Side_Eight"
+                    style="@style/radioButtonStyle"
+                    android:text="8 Sides" />
+
+                <!-- Radio button group for 10 sided dice -->
+                <RadioButton
+                    android:id="@+id/D_Side_Ten"
+                    style="@style/radioButtonStyle"
+                    android:text="10 Sides" />
+
+                <!-- Radio button group for 12 sided dice -->
+                <RadioButton
+                    android:id="@+id/D_Side_Twelve"
+                    style="@style/radioButtonStyle"
+                    android:text="12 Sides" />
+            </RadioGroup>
+
+            <!-- Button two roll dice two times -->
+            <Button
+                android:id="@+id/btnROllOnce"
+                android:text="Roll Once"
+                style="@style/ButtonStyle" />
+            <Button
+                android:id="@+id/btnROllTwice"
+                android:text="Roll Twice"
+                style="@style/ButtonStyle" />
+        </LinearLayout>
+</LinearLayout>
